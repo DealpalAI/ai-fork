@@ -34,7 +34,7 @@
   "homepage": "https://sdk.vercel.ai/docs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vercel/ai.git"
+    "url": "git+https://github.com/DealpalAI/ai-fork.git"
   },
   "license": "Apache License",
   "bugs": {
