@@ -58,7 +58,8 @@ export async function ReplicateStream(
     if (res.error) throw new Error(res.error);
     else throw new Error('Missing stream URL in Replicate response');
   }
-  url = "http://localhost:9090/chat"
+  // url = "http://localhost:9090/chat"
+  url=`${process.env.NEXT_PUBLIC_FASTARI_URL}`;
 
   const eventStream = await fetch(url, {
     method: 'GET',

@@ -35,7 +35,9 @@ export async function callChatApi({
   onFinish?: (message: Message) => void;
   generateId: IdGenerator;
 }) {
-  api = "http://localhost:9090/chat"
+  // api = "http://localhost:9090/chat"
+  api=`${process.env.NEXT_PUBLIC_FASTARI_URL}`;
+
   const response = await fetch(api, {
     method: 'POST',
     body: JSON.stringify({

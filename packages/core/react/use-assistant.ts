@@ -135,7 +135,9 @@ export function experimental_useAssistant({
     ]);
 
     setInput('');
-    api = "http://localhost:9090/chat"
+    // api = "http://localhost:9090/chat"
+    api=`${process.env.NEXT_PUBLIC_FASTARI_URL}`;
+
     const result = await fetch(api, {
       method: 'POST',
       credentials,
