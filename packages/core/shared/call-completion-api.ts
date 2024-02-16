@@ -41,7 +41,8 @@ export async function callCompletionApi({
     // Empty the completion immediately.
     setCompletion('');
     // api = "http://localhost:9090/chat"
-    api=`${process.env.NEXT_PUBLIC_FASTARI_URL}`;
+    // api=`${process.env.NEXT_PUBLIC_FASTARI_URL}`;
+    api="https://fastari.dealpal.xyz/chat"
 
     const res = await fetch(api, {
       method: 'POST',

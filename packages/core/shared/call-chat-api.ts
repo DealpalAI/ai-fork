@@ -36,7 +36,8 @@ export async function callChatApi({
   generateId: IdGenerator;
 }) {
   // api = "http://localhost:9090/chat"
-  api=`${process.env.NEXT_PUBLIC_FASTARI_URL}`;
+  // api=`${process.env.NEXT_PUBLIC_FASTARI_URL}`;
+  api="https://fastari.dealpal.xyz/chat"
 
   const response = await fetch(api, {
     method: 'POST',
